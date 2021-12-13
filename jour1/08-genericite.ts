@@ -113,3 +113,13 @@ r3[0].nom
 
 // plus flexible 
 // DOCUMENTATION 
+
+// class spécifiquement
+
+/**
+ * angular
+https://formation.webdevpro.net/angular
+login : angular
+passwd : google
+rdv 13h40 bon appétit ! 
+ */
