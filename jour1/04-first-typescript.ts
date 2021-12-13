@@ -74,8 +74,8 @@ let etudiant2 : interfaceEtudiant = { nom : "Béatrice" , duree : 12 }
     items : ["pêche", 4, "poire", 3, "ananas" , 2],
     budget : 40 ,
     unite : "euros"
-};*/
-/* liste5 = [
+};
+ liste5 = [
     {id: 1 , nom : "pêche" , quantite : 4},
     {id: 2 , nom : "poire" , quantite : 3},
     {id: 3 , nom : "ananas" , quantite : 2},
