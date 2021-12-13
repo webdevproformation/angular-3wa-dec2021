@@ -19,3 +19,18 @@ afficher en dessous du composant <premier></premier>
 
 
 2 via un outil en ligne de commande que l'on va pouvoir personnaliser 
+
+créer via une commande vos composants 
+
+cd jour1-rappels
+ng generate component nom-composant
+ng g c nom-composant
+
+CREATE src/app/nom-composant/nom-composant.component.html (28 bytes)
+CREATE src/app/nom-composant/nom-composant.component.spec.ts (669 bytes)
+CREATE src/app/nom-composant/nom-composant.component.ts (302 bytes)
+CREATE src/app/nom-composant/nom-composant.component.css (0 bytes)
+UPDATE src/app/app.module.ts (581 bytes)
+
+
+ng g c => angular.json

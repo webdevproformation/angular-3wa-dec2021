@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
               <h1>rappels angular</h1>
               <premier></premier>
               <deuxieme></deuxieme>
+              <troisieme></troisieme>
             </div>`,
   styleUrls: ['./app.component.css']
 })
