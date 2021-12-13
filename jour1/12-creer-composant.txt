@@ -1,0 +1,21 @@
+deux manières de créer des composants
+
+1 manuellement 
+
+src/app => créer un fichier premier.component.ts 
+
+
+créer un nouveau composant manuellement 
+
+nom => deuxieme 
+
+afficher le html suivant 
+<ul>
+    <li>Element 1</li>
+    <li>Element 2</li>
+    <li>Element 3</li>
+</ul>
+afficher en dessous du composant <premier></premier>
+
+
+2 via un outil en ligne de commande que l'on va pouvoir personnaliser 

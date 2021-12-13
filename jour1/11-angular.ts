@@ -28,7 +28,26 @@ cd ..
 ng 
 version 13 de Angular 
 
+npm i -g @angular/cli
+cd ..
 ng new jour1-rappels
+cd jour1-rappels
+ng serve --open
 
+src => dans ce dossier que l'on va passer 99% de notre temps
 
+angular.json => modifier 
+
+index.html 
+<app-root></app-root> => TOUT ce que va être créé dans le dossier src compilé en injecté dans cette balise 
+main.ts html <=> les fichiers .ts 
+
+dans le dossier src => app => application 
+
+app.module.ts => fichier du module racine de notre application 
+
+app.component.css / app.component.html / app ... spect.ts (test intégration)
+app.component.ts 
+
+src/app/app.component.ts
  */
