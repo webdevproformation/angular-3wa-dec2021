@@ -7,6 +7,7 @@ import { PremierComponent } from './premier.component';
 import { NomComposantComponent } from './nom-composant/nom-composant.component';
 import { TroisiemeComponent } from './troisieme.component';
 import { QuatriemeComponent } from './quatrieme.component';
+import { CinquiemeComponent } from './cinquieme.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { QuatriemeComponent } from './quatrieme.component';
     DeuxiemeComponent,
     NomComposantComponent,
     TroisiemeComponent,
-    QuatriemeComponent
+    QuatriemeComponent,
+    CinquiemeComponent
   ],
   imports: [
     BrowserModule

@@ -26,6 +26,13 @@ dans la page
 <article>
 <h2>titre</h2>
 <p>contenu</p>
+<ul>
+    <li>tag</li>
+    <li>tag</li>
+    <li>tag</li>
+    <li>tag</li>
+    <li>tag</li>
+</ul>
 </article>
 
 répéter ces balises pour chaque article du service 

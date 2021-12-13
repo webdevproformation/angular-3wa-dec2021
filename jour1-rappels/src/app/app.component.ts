@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `<div>
               <h1>rappels angular</h1>
+              <cinquieme></cinquieme>
               <quatrieme></quatrieme>
               <premier></premier>
               <deuxieme></deuxieme>
