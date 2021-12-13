@@ -67,3 +67,19 @@ export class TroisiemeComponent implements OnInit {
     // Directives 
     // 15h35 bon café @ toute suite !!! 
 }
+
+
+// créer un nouveau composant => quatrieme qui contient 3 balises 
+/**
+  1 input de type texte
+  2 button 
+  3 <ul>
+  <ul>
+
+  0 remplir la balise ul avec les valeurs suivantes : "<li>js</li>"  "<li>node</li>"
+  1 cliquer sur le bouton 
+    => récupérer le texte ecrit dans l'input ajouter à la fin de la balise <ul>
+    => vider l'input 
+    => avant ajouter un nouveau <li> dans l'ul vérifier au préalable que le champ input contient au moins une lettre ! 
+
+ */
