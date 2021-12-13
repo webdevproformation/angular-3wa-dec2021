@@ -45,3 +45,6 @@ https://www.typescriptlang.org/ => le site officiel du langage
 - tsc -v 
 - Version 4.5.3
 
+## github 
+
+[notes de cours](https://github.com/webdevproformation/angular-3wa-dec2021)
