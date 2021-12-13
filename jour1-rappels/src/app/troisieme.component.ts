@@ -73,8 +73,7 @@ export class TroisiemeComponent implements OnInit {
 /**
   1 input de type texte
   2 button 
-  3 <ul>
-  <ul>
+  3 <ul><ul>
 
   0 remplir la balise ul avec les valeurs suivantes : "<li>js</li>"  "<li>node</li>"
   1 cliquer sur le bouton 
