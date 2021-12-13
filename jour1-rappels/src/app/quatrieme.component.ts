@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BddService } from "./bdd.service"; 
 
 @Component({
   selector: 'quatrieme',
@@ -11,6 +12,9 @@ import { Component, OnInit } from '@angular/core';
   `
 })
 export class QuatriemeComponent implements OnInit {
+  public constructor( public dataService : BddService ) { }
+  // injection de dépendance + syntaxe courte pour créer la propriété dataService
+  // angular this.dataService = new BddService()
   public onClickButton(inputValue : HTMLInputElement){
     if(inputValue.value.length > 0){
       this.skills.push(inputValue.value);
@@ -19,11 +23,9 @@ export class QuatriemeComponent implements OnInit {
     }
     return alert("veuillez remplir le champ");
   }
-  public skills : Array<string> = ["js", "node"];
-
-  constructor() { }
-
+  public skills : Array<string> = ["js", "node"]; // dès qu'une propriété de la class est modifiée
+  // automatiquement la vue est rafraichie 
   ngOnInit(): void {
+    console.log( this.dataService.users )
   }
-
 }

@@ -1,0 +1,14 @@
+une bonne pratique d'Angular 
+
+créer le minimum de propriété dans les composants 
+
+propre au composant 
+
+données qui vont être partagée en plusieurs composants => Service 
+
+stocker les données 1 seul endroit => service 
+récupérer ces informations dans le ou les composants qui vont les consommer 
+
+ng g c mon-composant 
+
+ng g service bdd 
