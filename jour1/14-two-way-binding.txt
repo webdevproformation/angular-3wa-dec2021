@@ -1,0 +1,20 @@
+
+
+class   =>  vue           Property Binding 
+
+propriete = valeur      =>   {{ propriété }}
+propriété = service     =>    <p [innerText]="propriété">   
+
+
+vue   => class            Event Binding 
+
+<button (event)="method(element)" #element>   => method(element : typage)
+<button (event)="method($event)">             => method($element : Event)
+
+
+Two Way binding    
+synchronisation dans les deux sens class => vue    ET    vue => class 
+
+propriete = valeur               <input  [(ngModel)]="propriete" >
+
+// 
