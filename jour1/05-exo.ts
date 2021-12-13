@@ -1,3 +1,4 @@
+export {};
 let liste1 : string = "pêche poire ananas";
 let liste2 : string[] = ["pêche" , "poire", "ananas"]; 
 //let liste3 : Array<string | number> = ["pêche", 4, "poire", 3, "ananas" , 2];
@@ -22,7 +23,9 @@ interface interfaceProduit {
 }
 
 let liste5 : Array<interfaceProduit> = [
-    {id: 1 , nom : "pêche" , quantite : 4},
-    {id: 2 , nom : "poire" , quantite : 3},
-    {id: 3 , nom : "ananas" , quantite : 2},
+    {id: 1 , nom : "pêche" , quantite : 4 },
+    {id: 2 , nom : "poire" , quantite : 3 },
+    {id: 3 , nom : "ananas" , quantite : 2 },
 ];
+
+// tsc 05-exo.ts --target es6 --removeComments
