@@ -1,0 +1,14 @@
+typescript
+https://formation.webdevpro.net/typescript
+login : typescript
+passwd : microsoft
+
+
+angular
+https://formation.webdevpro.net/angular
+login : angular
+passwd : google
+
+github :
+https://github.com/webdevproformation/angular-3wa-dec2021
+

@@ -1,0 +1,51 @@
+créer un nouveau projet 
+ng new jour2-tp
+
+une fois installé => ajouté bootstrap css
+
+cd jour2-tp
+npm i bootstrap => node_modules/bootstrap/dist/css/bootstrap.min.css 
+
+angular.json
+
+build => ajouter cette ligne 
+
+"styles": [
+    "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+    "src/styles.css"
+],
+
+ng serve --open
+
+=> bootstrap 
+=> système de grille => responsive design plus simple 
+=> class utilitaire => ajouter de la marge / grossir un texte 
+=> Composant "Menu" 
+
+
+modification du fichier angular.json 
+
+"@schematics/angular:component": {
+    "prefix": "",
+    "inlineStyle": true,
+    "inlineTemplate": true,
+    "flat": true,
+    "skipTests": true
+}
+
+ng serve --open composant racine 
+src/app/app.component.ts 
+import { Component } from '@angular/core';
+@Component({
+  selector: 'app-root',
+  template: `
+    <div class="container">
+      <header class="row">
+        <h1>{{ title }}</h1>
+      </header>
+    </div>
+  `,
+})
+export class AppComponent {
+  public title:string  = 'jour2-tp';
+}

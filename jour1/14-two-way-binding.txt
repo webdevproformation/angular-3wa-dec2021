@@ -17,4 +17,4 @@ synchronisation dans les deux sens class => vue    ET    vue => class
 
 propriete = valeur               <input  [(ngModel)]="propriete" >
 
-// 
+// 9h00 !!! 
