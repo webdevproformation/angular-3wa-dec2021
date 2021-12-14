@@ -11,6 +11,7 @@ import { CreerObservableComponent } from './creer-observable.component';
 import { Exo1Component } from './exo1.component';
 import { FormationComponent } from './formation.component';
 import { OperateursComponent } from './operateurs.component';
+import { Exo2Component } from './exo2.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { OperateursComponent } from './operateurs.component';
     CreerObservableComponent,
     Exo1Component,
     FormationComponent,
-    OperateursComponent
+    OperateursComponent,
+    Exo2Component
   ],
   imports: [
     BrowserModule,

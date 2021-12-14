@@ -26,6 +26,9 @@ import { Component } from '@angular/core';
         <div class="col-4">
           <operateurs></operateurs>
         </div>
+        <div class="col-4">
+          <exo2></exo2>
+        </div>
       </section>
     </div>
   `,
