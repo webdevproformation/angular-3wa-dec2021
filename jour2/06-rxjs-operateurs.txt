@@ -1,0 +1,24 @@
+filter() => supprimer le ou les éléments émis qui ne répondent pas critères recherché
+
+// https://xgrommx.github.io/rx-book/content/which_operator_do_i_use/instance_operators.html
+
+
+array en javascript =>
+
+map() 
+reduce()
+find()
+filter()
+
+take()
+tap()
+
+pluck()
+mergeMap()
+
+.... 
+
+data => stream (rxjs) => pipe() traitement  => flux$.subscribe( (data) => this.articles = data )
+
+ng g c operateurs
+

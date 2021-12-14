@@ -10,6 +10,7 @@ import { RxjsComponent } from './rxjs.component';
 import { CreerObservableComponent } from './creer-observable.component';
 import { Exo1Component } from './exo1.component';
 import { FormationComponent } from './formation.component';
+import { OperateursComponent } from './operateurs.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FormationComponent } from './formation.component';
     RxjsComponent,
     CreerObservableComponent,
     Exo1Component,
-    FormationComponent
+    FormationComponent,
+    OperateursComponent
   ],
   imports: [
     BrowserModule,

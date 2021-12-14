@@ -19,3 +19,9 @@ export class FormationComponent implements OnInit {
   }
 
 }
+
+// 13h40 ... rxjs 
+// fusionner plusieurs observables 
+// Suject 
+
+// faire communiquer des composants qui ne sont parent @Input / @Output ... !! 

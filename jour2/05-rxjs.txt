@@ -38,7 +38,7 @@ ng g c creer-observable
 créer un nouveau composant exo1
 ng g c exo1
 
-créer propriete formation = [ 
+créer propriete formation = [
     {id : 1 , nom : "js" , duree : 2 , unite : "jour"},
     {id : 2 , nom : "node" , duree : 5 , unite : "jour"},
     {id : 3 , nom : "angular" , duree : 10 , unite : "jour"},
@@ -54,6 +54,8 @@ dans une liste
     <li> angular - 10 jours </li>
     <li> react - 6 jours </li>
 </ul>
+
+
 
 
 
