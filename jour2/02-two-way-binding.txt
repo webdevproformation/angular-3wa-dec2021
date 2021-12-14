@@ -1,0 +1,19 @@
+class => vue  [property]="membre_class" 
+
+vue => class 
+
+(event)="method_class()"
+
+vue <=> class 
+
+cd jour2-tp
+
+ng g c two-way
+
+app.component.ts 
+
+<section class="row">
+<div class="col-4">
+    <two-way></two-way>
+</div>
+</section>
