@@ -10,6 +10,16 @@ like  => Enfant
 ng g c article 
 ng g c like
 
+article => enfant @input
+article <= enfant @output 
+
+cas pratique => ajouter un nouveau bouton dans le composant enfant like 
+
+<button>diminuer</button> et le mettre en forme
+
+lorsque vous cliquez sur le bouton diminuer réduire le chiffre de like de -1 
+
+si le chiffre = 0 => alors faire en sorte que le chiffre soit entouré de noir 
 
 
 
