@@ -17,3 +17,22 @@ HttpClientModule => app.module.ts
 
 ng g c api
 
+créer un nouveau composant => exo3
+
+1 requete http vers l'adresse suivante https://jsonplaceholder.typicode.com/users
+
+2 garder que les informations suivantes pour chaque utilisateur
+
+name /email / phone map()
+
+3 uniquement les 3 premiers utilisateurs 
+
+4 afficher dans le composant les informations suivantes pour les 3 premiers utilisateurs :  
+<h2>name</h2>
+<ul>
+    <li>email</li>
+    <li>phone</li>
+<ul>
+
+
+
