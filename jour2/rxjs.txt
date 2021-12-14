@@ -1,0 +1,37 @@
+ng g c rxjs
+
+rxjs => librairie créée par les équipes de google 
+
+permet de transformer n'importe quoi 
+
+=> données 
+=> event 
+=> requête ajax http 
+=> .....
+
+=> flux de données => stream 
+
+=> créer un flux de données à la main 
+
+=> node_modules => rxjs 
+
+=> https://rxjs.dev/
+=> https://www.learnrxjs.io/
+
+=> https://formation.webdevpro.net/php-poo/
+=> login : php
+=> mdp : php
+
+=> Obsersable 
+=> observer 3 méthode next() error() complete()
+
+=> souscrire à l'observable  subscribe()
+=>  3 callback
+        next()
+        error() 
+        complete()
+
+=> new Observer() => manuellement 
+
+ng g c creer-observable 
+

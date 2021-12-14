@@ -14,6 +14,9 @@ import { Component } from '@angular/core';
         <div class="col-4">
           <article></article>
         </div>
+        <div class="col-4">
+          <rxjs></rxjs>
+        </div>
       </section>
     </div>
   `,

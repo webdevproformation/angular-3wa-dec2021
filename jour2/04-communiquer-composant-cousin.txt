@@ -1,0 +1,27 @@
+04-communiquer-composant-cousin.txt
+
+
+app.component (composant Racine / root ) de l'application
+
+-   two-way
+
+-   article
+
+--      like  
+
+
+=> ajouter des informations du nombre de like dans two-way 
+
+=> couper coller la variable data de article => app.component 
+=> couper coller les deux méthodes 
+    augmenterLike($event:number) 
+    diminuerLike()
+
+plusieurs composants qui ne sont pas des parent => enfant 
+plusieurs composants qui ne sont pas des cousin => enfant 
+
+
+rxjs et les services 
+
+
+

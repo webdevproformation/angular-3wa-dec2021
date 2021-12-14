@@ -14,7 +14,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArticleComponent implements OnInit {
   public diminuerLike(){
-    this.data.like--; 
+    if(this.data.like > 0){
+      this.data.like--; 
+    }
   }
 
   public augmenterLike($event:number){

@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { TwoWayComponent } from './two-way.component';
 import { ArticleComponent } from './article.component';
 import { LikeComponent } from './like.component';
+import { RxjsComponent } from './rxjs.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TwoWayComponent,
     ArticleComponent,
-    LikeComponent
+    LikeComponent,
+    RxjsComponent
   ],
   imports: [
     BrowserModule,
