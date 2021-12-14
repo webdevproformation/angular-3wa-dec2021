@@ -7,6 +7,7 @@ import { TwoWayComponent } from './two-way.component';
 import { ArticleComponent } from './article.component';
 import { LikeComponent } from './like.component';
 import { RxjsComponent } from './rxjs.component';
+import { CreerObservableComponent } from './creer-observable.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { RxjsComponent } from './rxjs.component';
     TwoWayComponent,
     ArticleComponent,
     LikeComponent,
-    RxjsComponent
+    RxjsComponent,
+    CreerObservableComponent
   ],
   imports: [
     BrowserModule,

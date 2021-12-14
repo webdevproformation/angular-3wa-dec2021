@@ -17,6 +17,9 @@ import { Component } from '@angular/core';
         <div class="col-4">
           <rxjs></rxjs>
         </div>
+        <div class="col-4">
+          <creer-observable></creer-observable>
+        </div>
       </section>
     </div>
   `,
