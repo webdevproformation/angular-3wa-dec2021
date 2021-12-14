@@ -68,3 +68,11 @@ export class Exo3Component implements OnInit {
   }
 
 }
+// rxjs => si j'ai plusieurs observables => les fusionner
+// get post put delete // json-server 
+// subject behaviourSuject AsyncSubject ....
+
+// router  
+// organiser un projet Angular !!! 
+
+
