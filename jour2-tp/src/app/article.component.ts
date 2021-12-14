@@ -5,12 +5,19 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <h2>{{ data.titre }}</h2>
     <p>{{ data.contenu }}</p>
-    <like [nb]="data.like" (augmenter)="augmenterLike($event)" ></like>
+    <like 
+        [nb]="data.like" 
+        (augmenter)="augmenterLike($event)" 
+        (diminuer)="diminuerLike()" 
+    ></like>
   `
 })
 export class ArticleComponent implements OnInit {
+  public diminuerLike(){
+    this.data.like--; 
+  }
 
-  augmenterLike($event:number){
+  public augmenterLike($event:number){
     console.log($event);
     this.data.like++; 
   }

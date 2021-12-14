@@ -21,5 +21,7 @@ lorsque vous cliquez sur le bouton diminuer réduire le chiffre de like de -1
 
 si le chiffre = 0 => alors faire en sorte que le chiffre soit entouré de noir 
 
+10h45 @toute suite !!!
+
 
 
