@@ -51,4 +51,5 @@ ng g c operateurs
 
 5 via l'opérateur find retourner l'utilisateur dont le nom est stephan 
 
+// 15h35 bon café !!!! @ toute suite !!! 
 

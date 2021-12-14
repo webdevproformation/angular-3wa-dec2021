@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
         <h1>{{ title }}</h1>
       </header>
       <section class="row">
+        <api></api>
+      </section>
+      <hr>
+      <section class="row">
         <div class="col-4">
           <two-way></two-way>
         </div>

@@ -1,0 +1,19 @@
+demande à un serveur envoie des données 
+
+=> API public 
+=> API = Application Program Interface 
+=> ensemble de code / et de règles qui vont permettre à deux programmes
+
+de communiquer et d'être synchro 
+
+
+Angular (jour2-tp)   <========>    Serveur 
+                                        https://jsonplaceholder.typicode.com/
+
+                                https://jsonplaceholder.typicode.com/posts
+
+
+HttpClientModule => app.module.ts
+
+ng g c api
+

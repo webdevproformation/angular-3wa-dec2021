@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
 
 import { AppComponent } from './app.component';
 import { TwoWayComponent } from './two-way.component';
@@ -12,6 +13,7 @@ import { Exo1Component } from './exo1.component';
 import { FormationComponent } from './formation.component';
 import { OperateursComponent } from './operateurs.component';
 import { Exo2Component } from './exo2.component';
+import { ApiComponent } from './api.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,13 @@ import { Exo2Component } from './exo2.component';
     Exo1Component,
     FormationComponent,
     OperateursComponent,
-    Exo2Component
+    Exo2Component,
+    ApiComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
