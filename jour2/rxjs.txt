@@ -35,3 +35,26 @@ permet de transformer n'importe quoi
 
 ng g c creer-observable 
 
+créer un nouveau composant exo1
+
+créer propriete formation = [ 
+    {id : 1 , nom : "js" , duree : 2 , unite : "jour"},
+    {id : 2 , nom : "node" , duree : 5 , unite : "jour"},
+    {id : 3 , nom : "angular" , duree : 10 , unite : "jour"},
+    {id : 4 , nom : "react" , duree : 6 , unite : "jour"},
+]
+
+1 transformer la collection formation en un observable 
+2 filtrer uniquement les formations dont la durée est >= 6 
+3 afficher dans le composant (dans la vue ) la liste des formations >= 6 jours 
+dans une liste 
+
+<ul>
+    <li> angular - 10 jours </li>
+    <li> react - 6 jours </li>
+</ul>
+
+
+
+
+
