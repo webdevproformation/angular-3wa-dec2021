@@ -8,6 +8,8 @@ import { ArticleComponent } from './article.component';
 import { LikeComponent } from './like.component';
 import { RxjsComponent } from './rxjs.component';
 import { CreerObservableComponent } from './creer-observable.component';
+import { Exo1Component } from './exo1.component';
+import { FormationComponent } from './formation.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { CreerObservableComponent } from './creer-observable.component';
     ArticleComponent,
     LikeComponent,
     RxjsComponent,
-    CreerObservableComponent
+    CreerObservableComponent,
+    Exo1Component,
+    FormationComponent
   ],
   imports: [
     BrowserModule,

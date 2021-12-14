@@ -20,6 +20,9 @@ import { Component } from '@angular/core';
         <div class="col-4">
           <creer-observable></creer-observable>
         </div>
+        <div class="col-4">
+          <exo1></exo1>
+        </div>
       </section>
     </div>
   `,

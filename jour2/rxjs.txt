@@ -36,6 +36,7 @@ permet de transformer n'importe quoi
 ng g c creer-observable 
 
 créer un nouveau composant exo1
+ng g c exo1
 
 créer propriete formation = [ 
     {id : 1 , nom : "js" , duree : 2 , unite : "jour"},
