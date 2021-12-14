@@ -56,15 +56,15 @@ export class Exo3Component implements OnInit {
   constructor(private http : HttpClient) { }
 
   ngOnInit(): void {
-    (this.http.get(this.urlApiUser) as Observable<Array<interfaceUser>>)
-            .pipe( 
-              map( tableau => {return from(tableau)}),
-              mergeAll(),
-              map( user => {return { name : user.name , email : user.email , phone : user.phone  }} ),
-              take(3),
-              toArray()
-             )
-             .subscribe( data => this.users = data )
+    (<Observable<Array<interfaceUser>>>this.http.get(this.urlApiUser) )
+        .pipe( 
+          map( tableau => {return from(tableau)}),
+          mergeAll(),
+          map( user => {return { name : user.name , email : user.email , phone : user.phone  }} ),
+          take(3),
+          toArray()
+          )
+          .subscribe( data => this.users = data )
   }
 
 }
