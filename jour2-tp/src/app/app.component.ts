@@ -11,6 +11,9 @@ import { Component } from '@angular/core';
         <div class="col-4">
           <two-way></two-way>
         </div>
+        <div class="col-4">
+          <article></article>
+        </div>
       </section>
     </div>
   `,

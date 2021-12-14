@@ -1,0 +1,15 @@
+article => parent
+
+titre 
+contenu 
+like 
+
+
+like  => Enfant 
+
+ng g c article 
+ng g c like
+
+
+
+

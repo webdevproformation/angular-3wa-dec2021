@@ -17,3 +17,9 @@ app.component.ts
     <two-way></two-way>
 </div>
 </section>
+
+two-way.component.ts 
+
+banane dans une boite 
+[(ngModel)]
+// ngModel => il faut ajouter un module FormsModule => app.module.ts    
