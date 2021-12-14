@@ -14,6 +14,7 @@ import { FormationComponent } from './formation.component';
 import { OperateursComponent } from './operateurs.component';
 import { Exo2Component } from './exo2.component';
 import { ApiComponent } from './api.component';
+import { Exo3Component } from './exo3.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ApiComponent } from './api.component';
     FormationComponent,
     OperateursComponent,
     Exo2Component,
-    ApiComponent
+    ApiComponent,
+    Exo3Component
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,9 @@ import { Component } from '@angular/core';
         <h1>{{ title }}</h1>
       </header>
       <section class="row">
+        <exo3></exo3>
+      </section>
+      <section class="row">
         <api></api>
       </section>
       <hr>
