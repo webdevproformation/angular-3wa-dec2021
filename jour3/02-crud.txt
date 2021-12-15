@@ -1,0 +1,51 @@
+// get => récupérer des informations depuis une base de données 
+// read 
+
+// CRUD complet 
+// Create // ajouter des articles / commentaires
+// Read  // get  récupérer 
+// Update  // modifier article existant
+// Delete  // supprimer un article existant 
+
+=> installer binaire en global json-server 
+// https://github.com/typicode/json-server
+
+// permettre de simuler serveur très facilement 
+
+// créer node => express / mongoDB ... .. 
+
+// json-server 
+
+// ng
+// npm i -g json-server
+// json-server -v
+
+// créer un nouveau dossier jour3-bdd
+// créer un fichier db.json
+
+{
+    "articles" : [
+        { "id" : 1 , "titre" : "Article 1" },
+        { "id" : 2 , "titre" : "Article 2" }
+    ],
+    "users" : [
+        { "id" : 1 , "nom" : "Alain"},
+        { "id" : 2 , "nom" : "Béatrice"}
+    ]
+}
+
+// récupérer ces données via une url
+// cd ../jour3-bdd
+
+json-server --watch db.json
+
+http://localhost:3000/articles
+http://localhost:3000/users
+
+------------------------------
+
+créer un nouveau service local-data
+
+requête http via le module HttpClient => http://localhost:3000/articles
+
+créer une méthode qui permet de récupérer tous les articles 
