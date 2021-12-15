@@ -1,0 +1,21 @@
+créer des composants => directement utilisé rxjs 
+
+le mieux c'est de mettre toute la partie rxjs dans un service 
+
+créer le stream + traitements (pipe) => service 
+
+les composants => s'abonner à la méthode du service 
+
+le composant => ...component.ts stocke la logique du block visuel 
+
+app.component.ts => modifier 
+
+    <div class="container">
+      <header class="row">
+          <h1 class="fs-3">{{ title }}</h1>
+      </header>
+    </div>
+
+requête http => HttpClientModule
+
+app.module.ts

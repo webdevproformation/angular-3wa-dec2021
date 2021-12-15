@@ -1,0 +1,49 @@
+typescript
+https://formation.webdevpro.net/typescript
+login : typescript
+passwd : microsoft
+
+angular
+https://formation.webdevpro.net/angular
+login : angular
+passwd : google
+
+github :
+https://github.com/webdevproformation/angular-3wa-dec2021
+
+des questions ??? 
+
+ng new jour3-tp 
+cd jour3-tp 
+npm i bootstrap
+
+modifier le fichier angular.json (racine du projet)
+
+"@schematics/angular:component": {
+    "flat": true,
+    "inlineStyle": true,
+    "inlineTemplate": true,
+    "skipTests": true,
+    "prefix": ""
+}
+
+"styles": [
+    "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+    "src/styles.css"
+],
+
+ng serve --open
+
+
+// rxjs => si j'ai plusieurs observables => les fusionner
+// get post put delete // json-server 
+// subject behaviourSuject AsyncSubject ....
+
+// rappel sur les formulaires => template driven formulaire 
+                              => reactive form (qui utilisent rxjs)
+
+// router  
+// organiser un projet Angular !!! 
+
+
+
