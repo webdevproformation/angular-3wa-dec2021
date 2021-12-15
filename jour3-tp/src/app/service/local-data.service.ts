@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient} from "@angular/common/http";
 import { interfaceArticle } from "./article"
-import { Observable } from 'rxjs';
+import { catchError, Observable, of , mergeMap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -14,6 +14,20 @@ export class LocalDataService {
 
   public getAll(){
     return this.http.get(this.url) as Observable<Array<interfaceArticle>>
+  }
+
+  public create( article :interfaceArticle ){
+    return (this.http.post(this.url , article ) as Observable<interfaceArticle>)
+    .pipe( 
+      catchError( ex => of(ex))
+    );
+  }
+
+  public delete( id : number ){
+    return this.http.delete(`${this.url}/${id}`)
+    .pipe(
+      mergeMap( () => this.getAll() )
+    );
   }
 
   // ng g c apres-midi/crud

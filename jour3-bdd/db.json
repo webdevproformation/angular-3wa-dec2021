@@ -1,10 +1,26 @@
 {
-    "articles" : [
-        { "id" : 1 , "titre" : "Article 1" },
-        { "id" : 2 , "titre" : "Article 2" }
-    ],
-    "users" : [
-        { "id" : 1 , "nom" : "Alain"},
-        { "id" : 2 , "nom" : "Béatrice"}
-    ]
+  "articles": [
+    {
+      "id": 1,
+      "titre": "Article 1"
+    },
+    {
+      "titre": "encore un nouvel article ",
+      "id": 6
+    },
+    {
+      "titre": "nouveau test ...",
+      "id": 9
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "nom": "Alain"
+    },
+    {
+      "id": 2,
+      "nom": "Béatrice"
+    }
+  ]
 }
