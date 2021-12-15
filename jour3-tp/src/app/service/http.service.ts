@@ -2,8 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { interfacePost } from "./post"
 import { interfaceComment } from "./comment"
-import { Observable } from "rxjs"
-import { from , of } from "rxjs";
+import { Observable ,  from , of , combineLatest } from "rxjs"
 import { take , map, mergeAll, mergeMap , toArray , takeLast, find, filter , catchError } from "rxjs/operators";
 
 @Injectable({
@@ -92,5 +91,40 @@ export class HttpService {
           catchError( ex => { return of(`erreur ${ex.status} - ${ex.statusText} pour commentaire ${id}`) })
         )
   }
+
+  // opérateur => 1 seule fois 
+  // composant / service ??? 
+
+  // méthode qui utilise un opérateur plusieurs composants
+  // service !! 
+  // deux observables 
+  // article ayant l'id 1
+  // commentaires associés 
+  // 2 observables à fusionner !!! 
+
+  public getArticleById(id : number){
+    return (<Observable<interfacePost>>this.http.get(`${this.urlAPI}/${id}`))
+        .pipe( 
+          catchError( ex => { return of(`erreur ${ex.status} - ${ex.statusText} pour article ${id}`) })
+        )
+  }
+
+  public getCommentsByPostId( postId : number ){
+    return (<Observable<Array<interfaceComment>>>this.http.get(`${this.urlAPI}/${postId}/comments`))
+        .pipe( 
+          catchError( ex => { return of(`erreur ${ex.status} - ${ex.statusText} aucun commentaire pour l'article ${postId}`) })
+        )
+  }
+
+  public getArticleComplet (id : number){
+    const article$ = this.getArticleById(id);
+    const comments = this.getCommentsByPostId(id);
+
+    // forkJoin ??? 
+    return combineLatest([article$, comments]).pipe( 
+      map( ([article , comments]) => Object.assign({} , article , {comments : comments}) )
+    )
+  }
+
 
 }

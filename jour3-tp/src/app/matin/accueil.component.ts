@@ -26,6 +26,8 @@ export class AccueilComponent implements OnInit {
     )
     // catchError // throwError
     // 10h51 bon café !!! 
+
+    this.postService.getArticleComplet(1).subscribe( console.log ); 
   }
 
 }
