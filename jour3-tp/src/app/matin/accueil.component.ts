@@ -20,6 +20,10 @@ export class AccueilComponent implements OnInit {
   ngOnInit(): void {
     this.postService.getRandom(4)
     .subscribe( data => this.articles = data )
+
+    this.postService.getComments(5000).subscribe(console.log)
+    // catchError // throwError
+    
   }
 
 }
