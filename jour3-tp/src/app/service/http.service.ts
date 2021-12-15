@@ -70,12 +70,20 @@ export class HttpService {
 
   // deux solutions possibles
 
+  // 1ère possibilité
   public getComments (id : number){
     return (this.http.get(this.urlcommentsAPI) as Observable<Array<interfaceComment>>)
             .pipe(
                 mergeMap(tableau => from (tableau)),
                 find( comment => { return comment.id === id})
             )
+  }
+
+  // 2ème possible 
+  // https://jsonplaceholder.typicode.com/comments/1
+
+  public getCommentsv2 (id : number){
+    return (this.http.get(`${this.urlcommentsAPI}/${id}`) as Observable<interfaceComment>)
   }
 
 }
