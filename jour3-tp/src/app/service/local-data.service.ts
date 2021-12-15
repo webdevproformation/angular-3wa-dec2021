@@ -13,7 +13,18 @@ export class LocalDataService {
   constructor(private http : HttpClient) { }
 
   public getAll(){
-    return this.http.get(this.url) as Observable<Array<interfaceArticle>>
+    return this.http.get(this.url) as Observable<Array<interfaceArticle>> ;
+  }
+
+  public getOne(id : number){
+    return this.http.get(`${this.url}/${id}`) as Observable<interfaceArticle> ; 
+  }
+
+  public update(article :interfaceArticle){
+    return (this.http.put( `${this.url}/${article.id}` , article ) as Observable<interfaceArticle>) 
+            .pipe(
+              mergeMap( () => this.getAll() )
+            ); 
   }
 
   public create( article :interfaceArticle ){
@@ -31,4 +42,5 @@ export class LocalDataService {
   }
 
   // ng g c apres-midi/crud
+  // 15h20 bon café @ toute suite !!! 
 }

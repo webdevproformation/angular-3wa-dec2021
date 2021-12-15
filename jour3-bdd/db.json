@@ -1,16 +1,16 @@
 {
   "articles": [
     {
-      "id": 1,
-      "titre": "Article 1"
+      "id": 10,
+      "titre": "fin du crud avec une modification"
     },
     {
-      "titre": "encore un nouvel article ",
-      "id": 6
+      "id": 11,
+      "titre": "encore balbla"
     },
     {
-      "titre": "nouveau test ...",
-      "id": 9
+      "id": 12,
+      "titre": "ultime test"
     }
   ],
   "users": [
