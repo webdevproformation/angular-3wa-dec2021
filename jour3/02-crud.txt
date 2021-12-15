@@ -49,3 +49,7 @@ créer un nouveau service local-data
 requête http via le module HttpClient => http://localhost:3000/articles
 
 créer une méthode qui permet de récupérer tous les articles 
+
+crud et formulaire 
+
+// rdv 13h30 bon appétit !!!
