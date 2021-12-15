@@ -28,12 +28,32 @@ export class HttpService {
   }
 
   public getLast(nb : number){
-    return this.getAll().pipe(
+    return this.getAll().pipe( // [{},{}]
+      // {}, {} ,{}
       mergeMap(tableau => from (tableau)), // = map(  return Observable ), mergeAll()
       takeLast(nb),
       toArray()
     )
   }
+
+  public getRandom( nb : number ){
+    return this.getAll().pipe(
+      mergeMap( tableau => {
+        tableau.sort(() => Math.random() - 0.5)
+        return from (tableau)
+      } ),
+      take(nb),
+      toArray()
+    )
+  }
+
+  // from ([1,2,3])
+  // 1
+  // 2
+  // 3
+
+  // of([1,2,3]) xxxxx
+  // [1,2,3]
 
 
   // last()

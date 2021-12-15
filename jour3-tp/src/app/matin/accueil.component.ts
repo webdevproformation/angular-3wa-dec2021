@@ -18,7 +18,7 @@ export class AccueilComponent implements OnInit {
   public articles : Array<interfacePost> | undefined ;
   public constructor(private postService : HttpService) { }
   ngOnInit(): void {
-    this.postService.getLast(4)
+    this.postService.getRandom(4)
     .subscribe( data => this.articles = data )
   }
 
