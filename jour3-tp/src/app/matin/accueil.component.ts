@@ -18,7 +18,7 @@ export class AccueilComponent implements OnInit {
   public articles : Array<interfacePost> | undefined ;
   public constructor(private postService : HttpService) { }
   ngOnInit(): void {
-    this.postService.getListe(9)
+    this.postService.getLast(4)
     .subscribe( data => this.articles = data )
   }
 
