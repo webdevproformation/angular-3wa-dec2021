@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LocalDataService } from "../service/local-data.service";
 import { interfaceArticle } from "../service/article";
-import { NgForm } from "@angular/forms"
+import { NgForm , NgControl } from "@angular/forms"
 @Component({
   selector: 'crud',
   template: `
@@ -27,17 +27,31 @@ import { NgForm } from "@angular/forms"
               required 
               minlength="3"
               maxlength="100"
+              (keydown)="onKeypress($event)"
               >
         </div>
         <div class="d-flex justify-content-end">
-          <input type="submit" class="btn btn-outline-dark btn-sm">
+          <input type="submit" class="btn btn-outline-dark btn-sm" [disabled]="f.invalid">
         </div>
+        <div class="alert bg-danger mt-2 text-white" *ngIf="show">
+          <div> le champ input doit contenir au minimum 3 caractères</div>  
+        </div> 
       </form>
     <div>`
 })
 export class CrudComponent implements OnInit {
   public id : number | undefined ;
   public titre : string | undefined; 
+  public show : boolean = false ; 
+
+  public onKeypress($event :Event){
+    const input = <HTMLInputElement>$event.target ;
+    if(input.value.length < 2){
+      this.show = true;
+    }else {
+      this.show = false;
+    }
+  }
 
   public onClickGetArticle(id :number){
       // récupérer l'article dans la base de donnée 
@@ -60,14 +74,13 @@ export class CrudComponent implements OnInit {
   public onSubmit(f : NgForm) {
     if(f.valid){
       // appeler un service qui va permettre d'ajouter un nouvel article dans la table articles
-      console.log(f.value)
-
+      // console.log(f.value)
       // id === undefined => create
       // id !== undefined => update
       if(f.value.id){
         // update
         this.data.update( f.value ).subscribe( reponse => {
-          this.articles = reponse
+          this.articles = reponse ;
           f.reset();
         } )
       } else {
