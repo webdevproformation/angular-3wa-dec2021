@@ -118,10 +118,10 @@ export class HttpService {
 
   public getArticleComplet (id : number){
     const article$ = this.getArticleById(id);
-    const comments = this.getCommentsByPostId(id);
+    const comments$ = this.getCommentsByPostId(id);
 
     // forkJoin ??? 
-    return combineLatest([article$, comments]).pipe( 
+    return combineLatest([article$, comments$]).pipe( 
       map( ([article , comments]) => Object.assign({} , article , {comments : comments}) )
     )
   }

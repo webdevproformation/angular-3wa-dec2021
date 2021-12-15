@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { HttpService } from "../service/http.service";
 import { interfacePost } from '../service/post';
 
@@ -14,11 +14,17 @@ import { interfacePost } from '../service/post';
     </div> 
   `
 })
-export class AccueilComponent implements OnInit {
+export class AccueilComponent implements OnInit, OnDestroy {
   public articles : Array<interfacePost> | undefined ;
   public constructor(private postService : HttpService) { }
+  public subscribe$ : any;
+  
+  ngOnDestroy(): void {
+      this.subscribe$.unsubscribe()
+  }
+
   ngOnInit(): void {
-    this.postService.getRandom(4)
+    this.subscribe$ = this.postService.getRandom(4)
     .subscribe( data => this.articles = data )
 
     this.postService.getCommentsv3(12).subscribe(
