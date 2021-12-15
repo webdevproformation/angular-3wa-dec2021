@@ -53,3 +53,8 @@ créer une méthode qui permet de récupérer tous les articles
 crud et formulaire 
 
 // rdv 13h30 bon appétit !!!
+
+
+
+réaliser 
+

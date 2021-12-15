@@ -1,0 +1,22 @@
+
+plusieurs tables 
+articles
+users 
+catégories .... 
+
+
+dupliquer le fichier local-data.service.ts 
+
+héritage extends 
+
+class méthodes de base du crud 
+
+class articlesService extends LocalDataService 
+class usersService extends LocalDataService
+
+ng g s service/local-article
+
+
+
+
+

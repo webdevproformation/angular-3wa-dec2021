@@ -7,10 +7,9 @@ import { catchError, Observable, of , mergeMap } from 'rxjs';
   providedIn: 'root'
 })
 export class LocalDataService {
+  protected url : string = "";
 
-  private url : string = "http://localhost:3000/articles"
-
-  constructor(private http : HttpClient) { }
+  constructor(protected http : HttpClient ) { }
 
   public getAll(){
     return this.http.get(this.url) as Observable<Array<interfaceArticle>> ;
@@ -39,8 +38,5 @@ export class LocalDataService {
     .pipe(
       mergeMap( () => this.getAll() )
     );
-  }
-
-  // ng g c apres-midi/crud
-  // 15h20 bon café @ toute suite !!! 
+  } 
 }

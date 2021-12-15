@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LocalDataService } from "../service/local-data.service";
+import { LocalArticleService } from "../service/local-article.service";
 import { interfaceArticle } from "../service/article";
 import { NgForm , NgControl } from "@angular/forms"
 @Component({
@@ -35,7 +35,7 @@ import { NgForm , NgControl } from "@angular/forms"
         </div>
         <div class="alert bg-danger mt-2 text-white" *ngIf="show">
           <div> le champ input doit contenir au minimum 3 caractères</div>  
-        </div> 
+        </div>
       </form>
     <div>`
 })
@@ -97,10 +97,7 @@ export class CrudComponent implements OnInit {
   }
 
   public articles : Array<interfaceArticle> | undefined ;
-  public constructor(
-      private data : LocalDataService
-    
-      ) { }
+  public constructor(private data : LocalArticleService) { }
   ngOnInit(): void {
     this.data.getAll().subscribe( articles => this.articles = articles )
   }
