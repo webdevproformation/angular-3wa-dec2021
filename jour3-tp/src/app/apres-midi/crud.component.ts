@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LocalArticleService } from "../service/local-article.service";
+import { LocalUserService } from "../service/local-user.service";
 import { interfaceArticle } from "../service/article";
 import { NgForm , NgControl } from "@angular/forms"
 @Component({
@@ -97,8 +98,13 @@ export class CrudComponent implements OnInit {
   }
 
   public articles : Array<interfaceArticle> | undefined ;
-  public constructor(private data : LocalArticleService) { }
+  public constructor(
+        private data : LocalArticleService , 
+        private user : LocalUserService 
+        ) { }
   ngOnInit(): void {
     this.data.getAll().subscribe( articles => this.articles = articles )
+
+    this.user.getAll().subscribe( users => console.log(users) ); 
   }
 }
