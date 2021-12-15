@@ -19,3 +19,9 @@ app.component.ts => modifier
 requête http => HttpClientModule
 
 app.module.ts
+
+ng g s service/http
+
+  // ng g i service/post
+  // ng g c matin/accueil
+

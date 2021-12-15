@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
       <header class="row">
           <h1 class="fs-3">{{ title }}</h1>
       </header>
+      <section class="row">
+          <accueil></accueil>
+      </section>
     </div>
   `
 })
