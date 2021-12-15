@@ -3,8 +3,8 @@ import { HttpClient } from "@angular/common/http";
 import { interfacePost } from "./post"
 import { interfaceComment } from "./comment"
 import { Observable } from "rxjs"
-import { from } from "rxjs";
-import { take , map, mergeAll, mergeMap , toArray , takeLast, find, filter} from "rxjs/operators";
+import { from , of } from "rxjs";
+import { take , map, mergeAll, mergeMap , toArray , takeLast, find, filter , catchError } from "rxjs/operators";
 
 @Injectable({
   providedIn: 'root'
@@ -84,6 +84,13 @@ export class HttpService {
 
   public getCommentsv2 (id : number){
     return (this.http.get(`${this.urlcommentsAPI}/${id}`) as Observable<interfaceComment>)
+  }
+
+  public getCommentsv3 (id : number){
+    return (this.http.get(`${this.urlcommentsAPI}/${id}`) as Observable<interfaceComment>)
+        .pipe( 
+          catchError( ex => { return of(`erreur ${ex.status} - ${ex.statusText} pour commentaire ${id}`) })
+        )
   }
 
 }

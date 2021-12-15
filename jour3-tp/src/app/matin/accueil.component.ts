@@ -21,11 +21,8 @@ export class AccueilComponent implements OnInit {
     this.postService.getRandom(4)
     .subscribe( data => this.articles = data )
 
-    this.postService.getCommentsv2(5000).subscribe(
-      console.log ,
-      (ex) => {if(ex.status == 404){
-        console.log(`le commentaire numéro 5000 n'existe pas ...`)
-      }}
+    this.postService.getCommentsv3(12).subscribe(
+      console.log 
     )
     // catchError // throwError
     // 10h51 bon café !!! 
