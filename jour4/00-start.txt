@@ -1,0 +1,58 @@
+typescript
+https://formation.webdevpro.net/typescript
+login : typescript
+passwd : microsoft
+
+angular
+https://formation.webdevpro.net/angular
+login : angular
+passwd : google
+
+github :
+https://github.com/webdevproformation/angular-3wa-dec2021
+
+
+crud => base de données ( MongoDB ) <=> json-server 
+
+révision sur les formulaires => Template Driven Form => 
+les attributs mis dans le formulaire => controller ce qui est écrit / valid / récupérer les données ... 
+
+idéal pour formulaire simple => formulaire de connexion / newsletter / contact ... 
+
+formulaire grande de champ 
+formulaire zone dynamique => article => catégories 1 2 ... 10
+
+Reactive Form => via du code dans la class en + très précis dans les validations ... 
+
+ng new jour4-tp
+
+cd jour4-tp
+npm i bootstrap 
+
+angular.json 
+
+"@schematics/angular:component": { => ng g c 
+    "flat": true,
+    "inlineStyle": true,
+    "inlineTemplate": true,
+    "prefix": "",
+    "skipTests": true
+}
+
+"styles": [
+    "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+    "src/styles.css"
+]
+
+ng serve 
+ng serve -o
+
+http://localhost:4200
+
+choisir navigateur par défaut => windows => ouvrir avec  > application par défaut 
+
+
+
+
+
+

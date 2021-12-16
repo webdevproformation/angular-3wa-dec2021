@@ -1,0 +1,12 @@
+Module attributs / directives => 
+
+app.module.ts
+
+import { ReactiveFormsModule } from "@angular/forms";
+
+imports: [
+    BrowserModule ,
+    ReactiveFormsModule
+],
+
+ng g c matin/form1
